@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GuessANum</string>
+    <string name="tipLv1">Угадайте число</string>
+    <string name="tipLv2">Угадайте число от 1 до 50</string>
+    <string name="tipLv3">Угадайте число от 1 до 100</string>
+    <string name="lvl1">lvl 1</string>
+    <string name="lvl2">lvl 2</string>
+    <string name="lvl3">lvl 3</string>
+    <string name="sendBtn">I am lucky</string>
+    <string name="blank">blank</string>
+</resources>

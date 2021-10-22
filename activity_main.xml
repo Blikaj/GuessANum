@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answertext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/guessNumber"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="@string/tipLv1"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="468dp"
+        android:onClick="sendaguess"
+        android:text="@string/sendBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessNumber" />
+
+    <TableRow
+        android:layout_width="319dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="352dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/lvlone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="levelone"
+            android:text="@string/lvl1" />
+
+        <Button
+            android:id="@+id/lvltwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="leveltwo"
+            android:text="@string/lvl2" />
+
+        <Button
+            android:id="@+id/lvlthree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="levelthree"
+            android:text="@string/lvl3" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/answertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/blank"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guessNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
