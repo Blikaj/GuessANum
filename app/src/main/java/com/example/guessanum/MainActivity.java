@@ -138,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
             case (R.id.menu_levelthree):
                 changedif(100);
                 return super.onOptionsItemSelected(item);
+            case(R.id.menu_exit):
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
 
